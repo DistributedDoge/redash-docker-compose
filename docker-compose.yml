@@ -1,12 +1,12 @@
-version: "1.0"
-x-redash-service: &redash-service
-  image: redash/redash:10.1.0.b50633
-  depends_on:
-    - postgres
-    - redis
-  env_file: ./env
-  restart: always
+version: "3.0"
 services:
+  x-redash-service: &redash-service
+    image: redash/redash:10.1.0.b50633
+    depends_on:
+      - postgres
+      - redis
+    env_file: ./env
+    restart: always
   server:
     <<: *redash-service
     command: server
