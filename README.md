@@ -1,11 +1,10 @@
-## Redash on Mac
+## Redash Quickstart
 
 Deploy [redash](https://github.com/getredash/redash) using docker-compose
 
 Prerequisites:
 
 - docker
-
 - docker-compose
 
 ### Quickly Start
@@ -13,29 +12,25 @@ Prerequisites:
 - clone
 
 ```shell
-git clone git@github.com:hoosin/redash-deploy.git
+gh repo clone DistributedDoge/redash-docker-compose
 ```
 
-- one time setup (first time only)
+- start Redash instance at  http://localhost:8000/
 
 ```shell
-make setup
-```
-- starts the service
-
-```shell
-make start
+make setup && make start
 ```
 
-With the above command, You can access the local Redash from http://localhost:8000/
-
-### Stop
+- stop
 
 ```shell
 make stop
 ```
 
+### Run in codespace
+
+[![badge](https://github.com/codespaces/badge.svg)](https://codespaces.new/DistributedDoge/redash-docker-compose)
 
 ### Redash version
 If you wish to deploy a different version of Redash, please make direct edits to the ```./docker-compose.yml``` file.
-Refer to the relevant version at: https://hub.docker.com/r/redash/redash/tags.
+Refer to the relevant version at: https://hub.docker.com/r/redash/redash/tags
