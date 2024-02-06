@@ -1,0 +1,4 @@
+{  
+  "name": "Redash Runner",
+  "postCreateCommand": "make setup && make start"
+}
