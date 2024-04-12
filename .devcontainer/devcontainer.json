@@ -1,4 +1,8 @@
 {  
   "name": "Redash Runner",
-  "postCreateCommand": "make setup && make start"
+  "postCreateCommand": "make setup && make start",
+  "features":
+  {
+    "ghcr.io/eitsupi/devcontainer-features/duckdb-cli:1":{}
+  }
 }
